@@ -6,6 +6,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -99,7 +101,8 @@ public class loginFragment extends Fragment implements View.OnClickListener {
 
         } else if (id == R.id.tvRegistered) {
 
-        } else {
+            NavController navController = Navigation.findNavController(getActivity(), R.id.fragment);
+            navController.navigate(R.id.registeredFragment);
 
         }
 
