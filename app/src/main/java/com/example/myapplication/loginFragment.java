@@ -108,6 +108,23 @@ public class loginFragment extends Fragment implements View.OnClickListener {
 
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        user=  auth.getCurrentUser();
+        if(user != null){
+            updateUI(user);
+            Toast.makeText(getContext().getApplicationContext(), "User Already logged in",
+                    Toast.LENGTH_LONG).show();
+
+        }
+        else {
+
+        }
+
+    }
+
     public void loginUser(String userEmail, String userPassword) {
 
         auth.signInWithEmailAndPassword(userEmail, userPassword)
@@ -119,6 +136,7 @@ public class loginFragment extends Fragment implements View.OnClickListener {
                             user = auth.getCurrentUser();
                             Toast.makeText(getActivity().getApplicationContext(), "Login Successfully",
                                     Toast.LENGTH_LONG).show();
+                            updateUI(user);
 
                         } else {
                             Toast.makeText(getActivity().getApplicationContext(), "Login Failed",
@@ -128,4 +146,15 @@ public class loginFragment extends Fragment implements View.OnClickListener {
                     }
                 });
     }
+
+    public void updateUI(FirebaseUser user)
+    {
+
+        NavController navController = Navigation.findNavController(getActivity(), R.id.fragment);
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("user", user);
+        navController.navigate(R.id.homeFragment, bundle);
+
+    }
+
 }
