@@ -1,7 +1,23 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">FireBase Login App></string>
+
+    <string name="settings_text_select_theme">Select Theme:</string>
+    <string name="settings_text_credentials">Login Page</string>
+    <string name="settings_text_username_hint">username</string>
+    <string name="settings_text_password_hint">password</string>
+    <string name="settings_text_sync_automatically">Sync automatically</string>
+    <string name="settings_text_location">Location</string>
+    <string name="settings_text_state_on">On</string>
+    <string name="settings_text_state_off">Off</string>
+    <string name="settings_text_clear_data">Clear Data</string>
+
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Registered">Registered</string>
+
+
+
+
 </resources>

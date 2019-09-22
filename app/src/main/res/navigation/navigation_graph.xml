@@ -21,4 +21,9 @@
         android:name="com.example.myapplication.homeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/todayWeatherFragment"
+        android:name="com.example.myapplication.TodayWeatherFragment"
+        android:label="fragment_today_weather"
+        tools:layout="@layout/fragment_today_weather" />
 </navigation>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#15329F"
+    android:background="@drawable/bg_login"
     tools:context=".registeredFragment">
 
 
@@ -15,8 +15,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
-        android:textColor="#ffffff"
+
         android:gravity="center_horizontal"
+        android:textColor="@android:color/background_light"
         android:text="Register New User"
         android:textSize="30sp" />
 
@@ -25,62 +26,69 @@
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/et_bg"
+        android:gravity="center|center_horizontal"
         android:hint="Please Enter Name"
-        android:textColorHint="#ffffff"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
 
     <EditText
         android:id="@+id/etUserEmail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_bg"
+        android:textColor="@android:color/background_light"
+        android:gravity="center|center_horizontal"
         android:hint="Please Enter Email ID"
-        android:textColorHint="#ffffff"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/etUserPass"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:textColorHint="#ffffff"
-        android:ems="10"
-        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_bg"
+        android:gravity="center|center_horizontal"
+        android:textColor="@android:color/background_light"
         android:hint="Password (Not less the 5 Character)"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/etConfirmPass"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:textColorHint="#ffffff"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_bg"
         android:ems="10"
-        android:gravity="center_horizontal"
+        android:textColor="@android:color/background_light"
+        android:gravity="center|center_horizontal"
         android:hint="Confirm Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         android:text="Registered"
-        android:textSize="24sp" />
+         />
 </LinearLayout>

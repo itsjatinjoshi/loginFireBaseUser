@@ -3,18 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15329F"
+    android:background="@drawable/bg_login"
     android:orientation="vertical"
     tools:context=".loginFragment">
-
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
         android:gravity="center_horizontal"
-        android:text="Login Page"
+        android:text="@string/settings_text_credentials"
         android:textColor="#ffffff"
         android:textSize="30sp" />
 
@@ -22,25 +24,28 @@
         android:id="@+id/etMail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/et_bg"
+        android:gravity="center|center_horizontal"
         android:hint="Please Enter Email here"
         android:inputType="textEmailAddress"
         android:textColor="@android:color/background_light"
         android:textColorHint="#ffffff" />
 
+
     <EditText
         android:id="@+id/etPass"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/et_bg"
+        android:gravity="center|center_horizontal"
         android:hint="Please enter the Password"
         android:inputType="textPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -51,23 +56,33 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
         android:text="Login"
+        android:textColor="#FFFFFF"
         android:textSize="30sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/tvRegistered"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
         android:clickable="true"
         android:gravity="center_horizontal"
         android:text="Registration"
         android:textColor="#ffffff"
         android:textColorHint="@android:color/background_light"
         android:textSize="24sp" />
+
+
 </LinearLayout>

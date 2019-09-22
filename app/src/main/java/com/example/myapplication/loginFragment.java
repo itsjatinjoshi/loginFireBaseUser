@@ -92,14 +92,17 @@ public class loginFragment extends Fragment implements View.OnClickListener {
                     etPass.requestFocus();
 
                 } else {
-                    String email = etMail.getText().toString();
-                    String pass = etPass.getText().toString();
 
-                    loginUser(email, pass);
-                }
+                        String email = etMail.getText().toString();
+                        String pass = etPass.getText().toString();
+
+                        loginUser(email, pass);
+                    }
+
             }
 
         } else if (id == R.id.tvRegistered) {
+
 
             NavController navController = Navigation.findNavController(getActivity(), R.id.fragment);
             navController.navigate(R.id.registeredFragment);
