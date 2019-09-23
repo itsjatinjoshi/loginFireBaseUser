@@ -212,7 +212,7 @@ public class homeFragment extends Fragment {
             weatherState.setText(wArray.getJSONObject(0).getString("weather_state_name"));
             currentTemp.setText(wArray.getJSONObject(0).getString("the_temp").substring(0, 4) + "°");
 
-            feelsLike.setText(wArray.getJSONObject(0).getString("the_temp").substring(0, 4) + "Feel Like");
+            feelsLike.setText("Feel Like: " +wArray.getJSONObject(0).getString("the_temp").substring(0, 4) );
             //feelLike.setText( "Feels Like " + feelsLike);
 
             minTemp.setText(wArray.getJSONObject(0).getString("min_temp").substring(0, 4) + "°");
